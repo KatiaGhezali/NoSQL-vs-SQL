@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB vs SQL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="presentation">
+      <section class="slide active">
+        <div class="content">
+          <h1>MongoDB vs SQL</h1>
+
+          <p class="subtitle">
+            A practical comparison of NoSQL and relational databases, their main
+            features, strengths, and use cases.
+          </p>
+
+          <p class="highlight">
+            Comparing data models, scalability, queries, transactions, and use
+            cases.
+          </p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="content">
+          <h2>What is MongoDB?</h2>
+
+          <p>
+            MongoDB is a document-oriented NoSQL database that stores data in
+            flexible, JSON-like documents using BSON.
+          </p>
+
+          <div class="columns">
+            <div class="card">
+              <h3>Key Features</h3>
+
+              <ul>
+                <li>Flexible document-based data model</li>
+                <li>Schema can evolve as application needs change</li>
+                <li>Horizontal scaling through sharding</li>
+                <li>High availability through replica sets</li>
+                <li>Flexible document-based queries</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Common Use Cases</h3>
+
+              <ul>
+                <li>Content management</li>
+                <li>Real-time applications</li>
+                <li>IoT applications</li>
+                <li>Mobile applications</li>
+                <li>Applications with rapidly changing data</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="content">
+          <h2>Understanding SQL Databases</h2>
+
+          <p>
+            SQL databases use a relational model that organizes data into
+            structured tables containing rows and columns.
+          </p>
+
+          <div class="columns">
+            <div class="card">
+              <h3>Key Features</h3>
+
+              <ul>
+                <li>Structured tables and predefined schemas</li>
+                <li>Relationships using keys and constraints</li>
+                <li>Powerful JOIN operations</li>
+                <li>Strong ACID transaction support</li>
+                <li>Standardized SQL query language</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Popular SQL Databases</h3>
+
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Microsoft SQL Server</li>
+                <li>Oracle Database</li>
+              </ul>
+
+              <p class="conclusion">
+                SQL databases are particularly useful for structured,
+                relational, and transaction-heavy applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="content">
+          <h2>MongoDB vs SQL: Key Comparisons</h2>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>MongoDB</th>
+                <th>SQL</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><strong>Data Model</strong></td>
+                <td>Documents</td>
+                <td>Tables with rows and columns</td>
+              </tr>
+
+              <tr>
+                <td><strong>Schema</strong></td>
+                <td>Flexible schema</td>
+                <td>Predefined and structured schema</td>
+              </tr>
+
+              <tr>
+                <td><strong>Relationships</strong></td>
+                <td>Embedded documents or references</td>
+                <td>Foreign keys and JOINs</td>
+              </tr>
+
+              <tr>
+                <td><strong>Scaling</strong></td>
+                <td>Strong support for horizontal scaling through sharding</td>
+                <td>
+                  Traditionally emphasizes vertical scaling, although modern
+                  systems can also scale horizontally
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Queries</strong></td>
+                <td>Flexible document-based queries</td>
+                <td>SQL with powerful JOINs and complex queries</td>
+              </tr>
+
+              <tr>
+                <td><strong>Transactions</strong></td>
+                <td>
+                  Supports ACID transactions, including multi-document
+                  transactions
+                </td>
+                <td>Strong ACID transaction support</td>
+              </tr>
+
+              <tr>
+                <td><strong>Best suited for</strong></td>
+                <td>Flexible, rapidly changing, distributed data</td>
+                <td>Structured, relational, transaction-heavy data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="content">
+          <h2>Which One Should You Choose?</h2>
+
+          <div class="columns">
+            <div class="card">
+              <h3>Choose MongoDB when...</h3>
+
+              <ul>
+                <li>Your data structure changes frequently</li>
+                <li>You need flexible document-based data</li>
+                <li>Horizontal scaling is important</li>
+                <li>Rapid development is a priority</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Choose SQL when...</h3>
+
+              <ul>
+                <li>Your data has strong relationships</li>
+                <li>You need complex JOINs and queries</li>
+                <li>Strong transactional consistency is important</li>
+                <li>Your data structure is well-defined</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="conclusion">
+            There is no universally better database. The right choice depends on
+            the requirements of the project.
+          </p>
+
+          <p class="thank-you">Thank you!</p>
+        </div>
+      </section>
+
+      <div class="slide-number">Slide <span id="currentSlide">1</span> / 5</div>
+
+      <div class="controls">
+        <button id="prevBtn">← Previous</button>
+        <button id="nextBtn">Next →</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
